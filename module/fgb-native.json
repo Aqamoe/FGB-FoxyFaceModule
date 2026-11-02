@@ -1,0 +1,14 @@
+{
+  "ModuleId": "com.fgbbridge.foxyface",
+  "ModuleName": "FoxyFace",
+  "AuthorName": "Aqamoe (光水)",
+  "Version": "0.1.0",
+  "ModuleDescription": "接收 FoxyFace 的 VRCFT 网络输出（UDP JSON，默认 127.0.0.1:25747），键名即 Unified Expressions，按名写入表情，并输出睁眼度与逐眼注视。不需要 VRCFT，不注入进程。",
+  "UsageInstructions": "1. 安装并启动 FoxyFace，在设置里开启 VRCFT/网络输出，目标地址填 127.0.0.1（端口保持默认 25747；FoxyFace 默认即为 localhost:25747）。2. 关闭 VRCFaceTracking，它和本模块抢同一个 UDP 端口，端口被占用时绑定会失败。3. 在「模块」页把 FoxyFace 设为启动并重启引擎，模块卡片应显示活跃。本模块为社区未验证实现。",
+  "ModulePageUrl": "https://github.com/Aqamoe/FGB-FoxyFaceModule",
+  "ModuleIcon": "icon.svg",
+  "DllFileName": "foxyface.dll",
+  "AbiVersion": 2,
+  "Capabilities": ["expression", "eyes"],
+  "RoleHint": "expression"
+}

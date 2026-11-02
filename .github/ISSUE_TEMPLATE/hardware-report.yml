@@ -1,0 +1,49 @@
+name: 真机验收报告
+description: 提交 FoxyFace 模块的实际设备验收结果
+title: "[验证] "
+labels: ["verification"]
+body:
+  - type: input
+    id: os
+    attributes:
+      label: 系统与 FoxyFace 安装方式
+      description: 例如 Windows 11 x64 + FoxyFace 安装包 / 便携版
+    validations:
+      required: true
+  - type: input
+    id: app
+    attributes:
+      label: FoxyFace 版本
+    validations:
+      required: true
+  - type: input
+    id: host
+    attributes:
+      label: FaceGaze Bridge 版本
+    validations:
+      required: true
+  - type: input
+    id: module
+    attributes:
+      label: 模块版本（Release tag）
+    validations:
+      required: true
+  - type: dropdown
+    id: result
+    attributes:
+      label: 结果
+      options:
+        - 全部正常
+        - 部分形状不对
+        - 极化/左右反了
+        - 连不上
+        - 崩溃
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 现象描述
+      description: 哪些表情不动、注视方向是否反了、模块卡片显示什么
+    validations:
+      required: true

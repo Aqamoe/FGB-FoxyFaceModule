@@ -1,0 +1,17 @@
+FGB FoxyFaceModule
+Copyright 2026 Aqamoe (光水)
+
+This product includes a copy of fgb_module_api.h from FaceGaze Bridge
+(https://github.com/Aqamoe/FaceGaze-Bridge), licensed under the Apache
+License, Version 2.0. The header is resolved at build time from the release
+pinned in sdk.lock.json; this repository does not contain a copy of it.
+
+The UDP JSON field list (port 25747, {Timestamp, Config, Values}, the Unified
+Expression key names and the eye/head custom keys) was informed by the upstream
+FoxyFace project (https://github.com/Jeka8833/FoxyFace): its Python application
+is licensed under Apache-2.0, while its C# VRCFT interface directory ships only
+an UNLICENSE file. This repository is an independent C++ implementation of that
+wire format and contains none of upstream source code.
+
+FoxyFace is a trademark of its owner. This project is not affiliated with or
+endorsed by FoxyFace or VRCFaceTracking.
